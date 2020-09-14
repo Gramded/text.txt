@@ -15,24 +15,7 @@ let iprsMass = [
         stage: 'На согласовании',
         deadLine: '22.11.2020-33.22.3030',
         progress: '67',
-        progressBar: [
-            {
-                name: 'HR',
-                stage: 0
-            },
-            {
-                name: 'HR1',
-                stage: 1
-            },
-            {
-                name: 'HR2',
-                stage: 2
-            },
-            {
-                name: 'HR3',
-                stage: 3
-            }
-        ]
+        progressBar: 1
 
     },
     {   id: '123124124',
@@ -51,24 +34,7 @@ let iprsMass = [
         stage: 'На согласовании',
         deadLine: '22.11.2020-33.22.3030',
         progress: '67',
-        progressBar: [
-            {
-                name: 'HR',
-                stage: 0
-            },
-            {
-                name: 'HR1',
-                stage: 1
-            },
-            {
-                name: 'HR2',
-                stage: 2
-            },
-            {
-                name: 'HR3',
-                stage: 3
-            }
-        ]
+        progressBar: 0
 
     }
 ];
