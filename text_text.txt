@@ -49,8 +49,8 @@ let iprsMass = [
         userId: '',
         userFlags: {
             HR: 1,
-            ruk: 0
-        }
+            ruk: 0,
+            uop: 0        }
     };
     
     
