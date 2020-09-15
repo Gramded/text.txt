@@ -38,3 +38,28 @@ let iprsMass = [
 
     }
 ];
+
+
+    let flags = {
+        sort: '',
+        timeLine: '',
+        search: '',
+        checkIPR: [],
+        checkStage: [],
+        userId: '',
+        userFlags: {
+            HR: 1,
+            ruk: 0
+        }
+    };
+    
+    
+    let flags = {
+    checkIPR: (2) ["self", "rrk"]
+    checkStage: (6) ["appointed", "coord", "revision", "agreed", "BIP", "completed"]
+    search: "Privet medved"
+    sort: "position" // "appointed" / "coord" / "revision" / "agreed" / "BIP" / "completed"
+    timeLine: "31.08.2020-11.10.2020"
+    userFlags: {HR: 0, ruk: 1}
+    userId: ""
+    }
