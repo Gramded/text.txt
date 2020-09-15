@@ -58,7 +58,13 @@ let iprsMass = [
     checkIPR: (2) ["self", "rrk"]
     checkStage: (6) ["appointed", "coord", "revision", "agreed", "BIP", "completed"]
     search: "Privet medved"
-    sort: "position" // "appointed" / "coord" / "revision" / "agreed" / "BIP" / "completed"
+    sort: "position" //                         
+                        "ruk"
+                        "stage"
+                       "type"
+                        "date"
+                        "progress"
+                        "position"
     timeLine: "31.08.2020-11.10.2020"
     userFlags: {HR: 0, ruk: 1}
     userId: ""
