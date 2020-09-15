@@ -47,10 +47,18 @@ let iprsMass = [
         checkIPR: [],
         checkStage: [],
         userId: '',
-        userFlags: {
-            HR: 1,
-            ruk: 0,
-            uop: 0        }
+        userFlags: [
+          { 
+            name: '',
+            value: '',
+            state: ''
+          },
+          { 
+            name: '',
+            value: '',
+            state: ''
+          },
+        ]
     };
     
     
