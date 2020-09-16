@@ -58,7 +58,22 @@ let iprsMass = [
             value: '',
             state: ''
           },
-        ]
+        ],
+        indicators: [
+          { 
+            name: '',
+            value: '',
+            state: '',
+            imgUr: ''
+          },
+          { 
+            name: '',
+            value: '',
+            state: '',
+            imgUr: ''
+          },
+        ],
+        newComment: N
     };
     
     
@@ -74,6 +89,30 @@ let iprsMass = [
                         "progress"
                         "position"
     timeLine: "31.08.2020-11.10.2020"
-    userFlags: {HR: 0, ruk: 1}
-    userId: ""
+    userId: "",
+    userFlags: [
+        { 
+         name: 'рус',
+         value: 'en',
+         state: 'active'
+        },
+        { 
+         name: 'рус',
+         value: 'en',
+         state: 'disable'
+        },
+        ],
+     indicators: [
+       { 
+        name: 'enName',
+        stage: 'plan', // 'BIP' / 'done'
+        imgUr: 'url'
+       },
+       { 
+        name: 'enName',
+        state: 'BIP', // 'plan' / 'done'
+        imgUr: 'url'
+       },
+      ],
+     newComment: 1
     }
