@@ -88,3 +88,78 @@
     </div>
 </body>
 </html>
+
+
+* {
+    justify-content: space-between;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.main-block {
+    margin: 70px auto;
+    width: 1000px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.functional-block_type {
+    display: flex;
+}
+
+.iprs-list-item {
+    display: flex;
+}
+
+.type-item {
+    width: 33%;
+    position: relative;
+}
+
+.f-c {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    opacity: 0.1;
+    transition: 1s;
+}
+
+.open {
+    display: flex;
+    opacity: 1;
+    transition: 1s;
+    top: 30px;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/*_________________FUN CLASS_________________________*/
+
+.active {
+    background-color: greenyellow;
+}
+
+.ipr-indicator-plan,
+.ipr-indicator-BIP,
+.ipr-indicator-done {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.ipr-indicator-plan {
+    background-color: gray;
+}
+
+.ipr-indicator-BIP {
+    background-color: gold;
+}
+
+.ipr-indicator-done {
+    background-color: greenyellow;
+}
