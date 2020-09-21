@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./iprs_style.css">
+    <script defer src="iprs_script.js"></script>
+</head>
+<body>
+    <div class="main-block">
+        <div class="functional-block">
+            <div class="functional-block_type">
+                <div id="ipr-type" class="type-item">
+                    <button class="btn type-item-btn" id="type-set-type">Тип ИПР</button>
+                    <div id="ipr-type-checkers" class="f-c">
+                        <label for="ipr-self">
+                            <input type="checkbox" name="ipr-type-checkers" id="ipr-self" class="check-box" value="self">
+                            <span>Саморазвитие</span>
+                        </label>
+                        <label for="ipr-rrk">
+                            <input type="checkbox" name="ipr-type-checkers" id="ipr-rrk" class="check-box" value="rrk">
+                            <span>Резерв руководящих кадров</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="ipr-stage" class="type-item">
+                    <button class="btn type=stage-btn" id="type-set-stage">Этап</button>
+                    <div id="ipr-stage-checkers" class="f-c">
+                        <label for="ipr-appointed">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-appointed" class="check-box" value="appointed">
+                            <span>Назначен</span>
+                        </label>
+                        <label for="ipr-on-coord">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-on-coord" class="check-box" value="coord">
+                            <span>На согласовании</span>
+                        </label>
+                        <label for="ipr-revision">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-revision" class="check-box" value="revision">
+                            <span>На доработке</span>
+                        </label>
+                        <label for="ipr-agreed">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-agreed" class="check-box" value="agreed">
+                            <span>Согласован</span>
+                        </label>
+                        <label for="ipr-BIP">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-BIP" class="check-box" value="BIP">
+                            <span>В процессе выполнения</span>
+                        </label>
+                        <label for="ipr-completed">
+                            <input type="checkbox" name="ipr-stage-checkers" id="ipr-completed" class="check-box" value="completed">
+                            <span>Выполнен</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="ipr-role">
+                </div>
+                <button>В эксель</button>
+            </div>
+            <div class="functional-block_date">
+                <label for="date-from">
+                    <span>С</span>
+                    <input type="date" id="date-from">
+                </label>
+                <label for="date-to">
+                    <span>по</span>
+                    <input type="date" id="date-to">
+                </label>
+                <input type="text" placeholder="Введите ключевые слова или фразы.." id="search-inp">
+            </div>
+            <div class="functional-block_sort">
+                <label for="ipr-list-sort">
+                    <span>Сортировать по:</span>
+                    <select name="ipr-list-sort" id="ipr-list-sort">
+                        <option value="" selected></option>
+                        <option value="ruk">Руководитель</option>
+                        <option value="stage">Этап</option>
+                        <option value="type">Тип ИПР</option>
+                        <option value="date">Дата</option>
+                        <option value="progress">Процент выполнения</option>
+                        <option value="position">Должность</option>
+                    </select>
+                </label>
+                <button id="form-list">Сформировать список</button>
+            </div>
+        </div>
+        <div class="iprs-list-place" id="iprs-list-place">
+        </div>
+    </div>
+</body>
+</html>
 
+
+* {
+    justify-content: space-between;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.main-block {
+    margin: 70px auto;
+    width: 1000px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.functional-block_type {
+    display: flex;
+}
+
+.iprs-list-item {
+    display: flex;
+}
+
+.type-item {
+    width: 33%;
+    position: relative;
+}
+
+.f-c {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    opacity: 0.1;
+    transition: 1s;
+}
+
+.open {
+    display: flex;
+    opacity: 1;
+    transition: 1s;
+    top: 30px;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/*_________________FUN CLASS_________________________*/
+
+.active {
+    background-color: greenyellow;
+}
+
+.ipr-indicator-plan,
+.ipr-indicator-BIP,
+.ipr-indicator-done {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.ipr-indicator-plan {
+    background-color: gray;
+}
+
+.ipr-indicator-BIP {
+    background-color: gold;
+}
+
+.ipr-indicator-done {
+    background-color: greenyellow;
+}
